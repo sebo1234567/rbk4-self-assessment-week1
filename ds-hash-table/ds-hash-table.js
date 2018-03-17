@@ -1,7 +1,6 @@
 var makeHashTable = function() {
   //Do not change the max!
   var max = 4;
-
     return {
       _storage: [],
       retrieve: function(key) {
@@ -10,7 +9,15 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
-        this._storage[hashFn(key, max)] = value;
+       for(var i=0;i<this._storage[i].length;i++){
+         if(this._storage[i][0]===hashFn(key, max))
+         {
+          this._storage[i][0]===value;
+         }
+         else 
+
+        {this._storage[hashFn(key, max)] = value;}
+      }
     }
   }
 };
